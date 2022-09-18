@@ -2,10 +2,10 @@
 body {
         background: rgb(45, 23, 79);
         background: linear-gradient(
-            90deg,
-            rgba(45, 23, 79, 1) 0%,
-            rgba(45, 23, 79, 1) 0%,
-            rgba(0, 0, 0, 1) 100%
+                90deg,
+                rgba(45, 23, 79, 1) 0%,
+                rgba(45, 23, 79, 1) 0%,
+                rgba(0, 0, 0, 1) 100%
         );
         display: flex;
         justify-content: center;

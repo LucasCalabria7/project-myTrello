@@ -12,7 +12,7 @@
     <div class="board">
         <h3>A Fazer...</h3>
         <ul id="todo" ondrop="drop(event, this.id)" ondragover="over(event)">
-            <li id="1" draggable="true" ondragstart="drag(event)">
+            <li id="studyId" draggable="true" ondragstart="drag(event)">
                 <p>Estudar</p>
                 <p class="remove" onclick="removeCard(this)">x</p>
             </li>
@@ -25,7 +25,7 @@
     <div class="board">
         <h3>Fazendo</h3>
         <ul id="doing" ondrop="drop(event, this.id)" ondragover="over(event)">
-            <li id="2" draggable="true" ondragstart="drag(event)">
+            <li id="makingId" draggable="true" ondragstart="drag(event)">
                 <p>Entregar Projetos</p>
                 <p class="remove" onclick="removeCard(this)">x</p>
             </li>
@@ -38,7 +38,7 @@
     <div class="board">
         <h3>Entregue!</h3>
         <ul id="done" ondrop="drop(event, this.id)" ondragover="over(event)">
-            <li id="3" draggable="true" ondragstart="drag(event)">
+            <li id="doneId" draggable="true" ondragstart="drag(event)">
                 <p>Projeto Trello</p>
                 <p class="remove" onclick="removeCard(this)">x</p>
             </li>
@@ -47,47 +47,5 @@
         <p>Adicionar Tarefa!</p>
     </div>
     </div>
-    </style>
-</head>
-<body>
-    <div class="board">
-        <h3>A Fazer...</h3>
-        <ul id="todo" ondrop="drop(event, this.id)" ondragover="over(event)">
-            <li id="1" draggable="true" ondragstart="drag(event)">
-                <p>Estudar</p>
-                <p class="remove" onclick="removeCard(this)">x</p>
-            </li>
-        </ul>
-        <div class="add-card" onclick="addCard(this)">
-            <p>Adicionar Tarefa!</p>
-        </div>
-    </div>
-
-    <div class="board">
-        <h3>Fazendo</h3>
-        <ul id="doing" ondrop="drop(event, this.id)" ondragover="over(event)">
-            <li id="2" draggable="true" ondragstart="drag(event)">
-                <p>Entregar Projetos</p>
-                <p class="remove" onclick="removeCard(this)">x</p>
-            </li>
-        </ul>
-        <div class="add-card" onclick="addCard(this)">
-            <p>Adicionar Tarefa!</p>
-        </div>
-    </div>
-
-    <div class="board">
-        <h3>Entregue!</h3>
-        <ul id="done" ondrop="drop(event, this.id)" ondragover="over(event)">
-            <li id="3" draggable="true" ondragstart="drag(event)">
-                <p>Projeto Trello</p>
-                <p class="remove" onclick="removeCard(this)">x</p>
-            </li>
-        </ul>
-        <div class="add-card" onclick="addCard(this)">
-            <p>Adicionar Tarefa!</p>
-        </div>
-    </div>
-
-</body>
+    </body>
 </html>
