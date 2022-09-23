@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
 </head>
 <body>
-    <div class="board">
+    <section class="board">
         <h3>A Fazer...</h3>
         <ul id="todo" ondrop="drop(event, this.id)" ondragover="over(event)">
             <li id="studyId" draggable="true" ondragstart="drag(event)">
@@ -17,12 +17,12 @@
                 <p class="remove" onclick="removeCard(this)">x</p>
             </li>
         </ul>
-    <div class="add-card" onclick="addCard(this)">
+    <section class="add-card" onclick="addCard(this)">
         <p>Adicionar Tarefa!</p>
-    </div>
-    </div>
+    </section>
+    </section>
 
-    <div class="board">
+    <section class="board">
         <h3>Fazendo</h3>
         <ul id="doing" ondrop="drop(event, this.id)" ondragover="over(event)">
             <li id="makingId" draggable="true" ondragstart="drag(event)">
@@ -30,12 +30,12 @@
                 <p class="remove" onclick="removeCard(this)">x</p>
             </li>
         </ul>
-    <div class="add-card" onclick="addCard(this)">
+    <section class="add-card" onclick="addCard(this)">
         <p>Adicionar Tarefa!</p>
-    </div>
-    </div>
+    </section>
+    </section>
 
-    <div class="board">
+    <section class="board">
         <h3>Entregue!</h3>
         <ul id="done" ondrop="drop(event, this.id)" ondragover="over(event)">
             <li id="doneId" draggable="true" ondragstart="drag(event)">
@@ -43,9 +43,9 @@
                 <p class="remove" onclick="removeCard(this)">x</p>
             </li>
         </ul>
-    <div class="add-card" onclick="addCard(this)">
+    <section class="add-card" onclick="addCard(this)">
         <p>Adicionar Tarefa!</p>
-    </div>
-    </div>
+    </section>
+    </section>
     </body>
 </html>

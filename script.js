@@ -15,7 +15,6 @@ function drop(event, id) {
   event.dataTransfer.clearData();
 }
 
-
 function addCard(elemento) {
   const UlId = elemento.previousElementSibling.id;
   const texto = prompt("Qual é a tarefa?");
