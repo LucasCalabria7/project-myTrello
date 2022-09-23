@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTrello!</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+</head>
+<body>
+    <section class="board">
+        <h3>A Fazer...</h3>
+        <ul id="todo" ondrop="drop(event, this.id)" ondragover="over(event)">
+            <li id="studyId" draggable="true" ondragstart="drag(event)">
+                <p>Estudar</p>
+                <p class="remove" onclick="removeCard(this)">x</p>
+            </li>
+        </ul>
+    <section class="add-card" onclick="addCard(this)">
+        <p>Adicionar Tarefa!</p>
+    </section>
+    </section>
+
+    <section class="board">
+        <h3>Fazendo</h3>
+        <ul id="doing" ondrop="drop(event, this.id)" ondragover="over(event)">
+            <li id="makingId" draggable="true" ondragstart="drag(event)">
+                <p>Entregar Projetos</p>
+                <p class="remove" onclick="removeCard(this)">x</p>
+            </li>
+        </ul>
+    <section class="add-card" onclick="addCard(this)">
+        <p>Adicionar Tarefa!</p>
+    </section>
+    </section>
+
+    <section class="board">
+        <h3>Entregue!</h3>
+        <ul id="done" ondrop="drop(event, this.id)" ondragover="over(event)">
+            <li id="doneId" draggable="true" ondragstart="drag(event)">
+                <p>Projeto Trello</p>
+                <p class="remove" onclick="removeCard(this)">x</p>
+            </li>
+        </ul>
+    <section class="add-card" onclick="addCard(this)">
+        <p>Adicionar Tarefa!</p>
+    </section>
+    </section>
+    </body>
+</html>

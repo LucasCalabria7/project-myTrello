@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,700&family=Nuosu+SIL&display=swap");
+body {
+        background: rgb(45, 23, 79);
+        background: linear-gradient(
+                90deg,
+                rgba(45, 23, 79, 1) 0%,
+                rgba(45, 23, 79, 1) 0%,
+                rgba(0, 0, 0, 1) 100%
+        );
+        display: flex;
+        justify-content: center;
+        font-family: "Lato", sans-serif;
+}
+
+.board {
+        background-color: rgba(225, 225, 225, 0.9);
+        width: 22vw;
+        margin: 2vh 0.25vw;
+        display: flex;
+        flex-direction: column;
+}
+
+h3 {
+        background-color: rgb(56, 5, 80);
+        color: white;
+        margin: 0;
+        text-align: center;
+        font-size: 3vh;
+}
+
+.add-card {
+        background-color: gray;
+        margin: 2vh 1vw;
+        border-radius: 6px;
+        text-align: center;
+}
+
+.add-card:hover {
+        cursor: pointer;
+}
+
+.add-card p {
+        font-size: 1vh 1vw;
+        padding: 0 1vw;
+        font-weight: 100;
+}
+
+ul {
+        list-style-type: none;
+        min-height: 50vh;
+        min-width: none;
+        padding: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+}
+
+li {
+        background-color: white;
+        box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        min-width: 5vw;
+        height: 4vh;
+        display: flex;
+        justify-content: space-between;
+        margin: 1vh 1vw;
+        padding: 1vh 1vw;
+        display: flex;
+        align-items: center;
+}
+
+li:hover {
+        cursor: move;
+}
+
+.remove {
+        width: 1vw;
+        height: 3vh;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 2vh 2vw;
+        color: #c3c3c3;
+}
+
+.remove:hover {
+        cursor: pointer;
+}
